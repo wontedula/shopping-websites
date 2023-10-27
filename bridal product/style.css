@@ -1,0 +1,33 @@
+.rating {
+    display: flex;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    width: 30px;
+    height: 30px;
+    background-image: url('star.svg'); /* Replace with your star image */
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked ~ label,
+  input[type="radio"]:not(:checked) ~ label:hover {
+    background-image: url('star-filled.svg'); /* Replace with your filled star image */
+    /* Add other styles to indicate a filled star for selected radio button or hovered label */
+  }
+  .main{
+
+    width: 100%;
+    
+    height: 100vh;
+    
+    position: relative;
+    
+    overflow: hidden;
+    
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
